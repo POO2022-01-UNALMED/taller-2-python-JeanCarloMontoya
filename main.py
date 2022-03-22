@@ -23,8 +23,7 @@ class Motor:
 
 class Auto:
     cantidadCreados=0
-    def __init__(self,modelo,precio,asientos,marca,motor,registro,cantidadCreados):
-        Auto.cantidadCreados=cantidadCreados
+    def __init__(self,modelo,precio,asientos,marca,motor,registro):
         self.modelo=modelo
         self.precio=precio
         self.asientos=asientos
@@ -48,3 +47,4 @@ class Auto:
 
 
         return "Las piezas no son originales"
+Auto("model 3", 33000, list(),"tesla", Motor(4, "electrico", 142), 341)
