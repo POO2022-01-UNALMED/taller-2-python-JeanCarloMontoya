@@ -4,9 +4,9 @@ class Asiento:
         self.registro=registro
         self.precio=precio
     
-    def cambiarColor(self,color2):
-        if color2=="blanco" or color2=="negro" or color2=="amarillo" or color2=="verde" or color2=="rojo":
-            self.color=color2
+    def cambiarColor(self,color):
+        if color=="blanco" or color=="negro" or color=="amarillo" or color=="verde" or color=="rojo":
+            self.color=color
 
 class Motor:
     def __init__(self,numeroCilindros,tipo,registro):
@@ -14,12 +14,12 @@ class Motor:
         self.tipo=tipo
         self.registro=registro
 
-    def cambiarRegistro(self,registro2):
-        self.registro=registro2
+    def cambiarRegistro(self,registro):
+        self.registro=registro
 
-    def asignarTipo(self,tipo2):
-        if tipo2=="gasolina" or tipo2=="electrico":
-            self.tipo=tipo2
+    def asignarTipo(self,tipo):
+        if tipo2=="gasolina" or tipo=="electrico":
+            self.tipo=tipo
 
 class Auto:
     cantidadCreados=0
@@ -47,4 +47,3 @@ class Auto:
 
 
         return "Las piezas no son originales"
-Auto("model 3", 33000, list(),"tesla", Motor(4, "electrico", 142), 341)
